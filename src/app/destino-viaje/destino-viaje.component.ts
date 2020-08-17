@@ -12,6 +12,7 @@ export class DestinoViajeComponent implements OnInit {
 
   // @ts-ignore
   @Input() destino: DestinoViaje;
+  @Input('index') position: number;
   @HostBinding('attr.class') cssClass = 'col-md-4';
   @Output()clicked: EventEmitter<DestinoViaje>;
 
