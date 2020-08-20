@@ -12,6 +12,7 @@ export class DestinoViajeComponent implements OnInit {
 
   // @ts-ignore
   @Input() destino: DestinoViaje;
+  // tslint:disable-next-line: no-input-rename
   @Input('index') position: number;
   @HostBinding('attr.class') cssClass = 'col-md-4';
   @Output()clicked: EventEmitter<DestinoViaje>;
@@ -23,6 +24,7 @@ export class DestinoViajeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line: typedef
   ir(){
     this.clicked.emit(this.destino);
     return false;
